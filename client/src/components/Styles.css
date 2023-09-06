@@ -1,0 +1,154 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url("https://source.unsplash.com/random/900×700/?food")no-repeat;
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* body{
+    background-image: linear-gradient(79deg, #bbf267, #7dfda5 48%, #deca6f);
+} */
+
+button{
+    color: white;
+    background-color: rgb(228, 17, 87);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.heading{
+    color:rgb(244, 240, 243);
+    font-size: 40px;
+    font-weight:800;
+    letter-spacing: 1px;
+    padding-top:  2rem;
+    text-align: center;
+}
+.heading h2 {
+    text-shadow:none;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-left: 24%;
+    /* background-color: rgb(69, 0, 42); */
+    background-color: rgba(223, 67, 67, 0.5);
+    color: white;
+padding: 40px;
+border-radius: 50%;
+font-weight: 900;
+font-size: 40px;
+    
+    
+}
+.heading h4{
+    color: rgb(62, 21, 225);
+    padding: 1%;
+    text-shadow: 2px 3px rgba(245, 239, 239, 0.7);
+}
+
+.searchBox{
+    text-align: center;
+    margin:1rem; 
+    color: rgb(179, 0, 0);
+    font-size: 20px;
+}
+
+.search-bar{
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    background-color: rgb(214, 143, 219);
+   
+   
+}
+.container{
+    width:100%;   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.card{
+    width:300px;
+    height:400px;
+    margin:1.5rem;
+    background: linear-gradient(to left,rgb(204, 255, 51,0.5),rgb(255, 255, 255,0.9));
+    border-radius: 8px;
+    box-shadow: 0 7px 12px rgb(204, 255, 51,0.5);
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+}
+.card img{
+    width:100%;
+}
+.card .info h3{
+    margin:0;
+    font-weight: 900;
+    margin-top: 15px;
+    text-align: center;
+}
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:0;
+    width:100%;
+    background: linear-gradient(to left,rgb(204, 255, 51,0.7),rgb(204, 255, 51,0.9));
+    transition:0.2s All;
+}
+.card:hover:before{
+    height: 100%;  
+   
+}
+.card .recipe{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    display: none;
+    transition: 0.3s all;
+}
+.card:hover .recipe{
+    display:block;
+}
+.recipe h4{
+    margin-bottom:10px;
+}
+.recipe img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe p{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{   
+    display: block;
+    text-align: center;
+}
+.notSearch{
+font-size: 35px;
+color: rgb(228, 234, 236);
+background-color: rgb(240, 146, 146);
+padding: 20px;
+border-radius: 50%;
+font-weight: 900;
+font-size: 20px;
+
+}
